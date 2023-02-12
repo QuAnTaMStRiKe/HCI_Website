@@ -5,7 +5,7 @@ class Home(models.Model):
     name = models.CharField(max_length=25)
     greetings_1 = models.CharField(max_length=10)
     greetings_2 = models.CharField(max_length=10)
-    picture = models.ImageField(upload_to='picture/')
+    # picture = models.ImageField(upload_to='picture/')
 
     updated = models.DateTimeField(auto_now=True)
 
@@ -17,7 +17,7 @@ class About(models.Model):
     heading = models.CharField(max_length=25)
     career = models.CharField(max_length=25)
     description = models.TextField(blank=False)
-    profile_image = models.ImageField(upload_to='profile/')
+    # profile_image = models.ImageField(upload_to='profile/')
 
     updated = models.DateTimeField(auto_now=True)
 
@@ -49,7 +49,7 @@ class Skills(models.Model):
 
 #Portfolio
 class Portfolio(models.Model):
-    image = models.ImageField(upload_to='portfolio/')
+    # image = models.ImageField(upload_to='portfolio/')
     link = models.URLField(max_length=250)
 
     def __str__(self):
